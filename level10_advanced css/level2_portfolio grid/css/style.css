@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* _____________________________________________________________________________________ */
+header {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header__title {
+  font-size: 4rem;
+}
+
+header__paragraph {
+  letter-spacing: 1rem;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  width: 1fr;
+  margin: 50px;
+  gap: 50px;
+}
+
+.item {
+  position: relative;
+}
+
+.item__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.item__overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 1.0s ease-out opacity;
+  transition: 1.0s ease-out opacity;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.item__button {
+  position: absolute;
+  width: 45%;
+  left: 27%;
+  top: 45%;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.item__overlay:hover {
+  opacity: 1;
+}
+
+/* _____________________________________________________________________________________ */
+@media only screen and (min-width: 768px) {
+  header, .item__button {
+    color: blue;
+  }
+  .container {
+    -ms-grid-columns: (1fr),2;
+        grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+}
+
+/* _____________________________________________________________________________________ */
+@media only screen and (min-width: 1024px) {
+  .container {
+    -ms-grid-columns: (1fr),3;
+        grid-template-columns: repeat(3, 1fr);
+  }
+  header, .item__button {
+    color: red;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,59 @@
+
+*,::before,::after{padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    }
+/* _____________________________________________________________________________________ */
+
+.container{
+    height:100vh;
+    font-family: monospace;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom:10px;
+}
+
+.social-media{display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80px;
+    height:50px;
+    transition:width 100ms ease-out;
+    &--blog {
+    background-color: #e17b77;
+    }
+    &--facebook {
+    background-color: #3b5998;
+    }
+    &--twitter {
+    background-color: #00aced;
+    }
+    &--github {
+    background-color: #333;
+    }
+    &--linkedin {
+    background-color: #007bb6;
+    }
+    &--elmo{
+    background-color: #ff4500;
+    }
+    &__span{margin-left:25px;
+    overflow:hidden;
+    }
+    &__link{color:white;
+    } 
+    &--width:hover{width:250px;}
+}  
+
+// font awesome class used for social-media icons
+.fa{margin-right: 15px;
+    padding-left:25px;
+    color:white;
+}
+
+
+
+
+

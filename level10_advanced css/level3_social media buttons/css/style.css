@@ -1,0 +1,87 @@
+*, ::before, ::after {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* _____________________________________________________________________________________ */
+.container {
+  height: 100vh;
+  font-family: monospace;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 10px;
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80px;
+  height: 50px;
+  -webkit-transition: width 100ms ease-out;
+  transition: width 100ms ease-out;
+}
+
+.social-media--blog {
+  background-color: #e17b77;
+}
+
+.social-media--facebook {
+  background-color: #3b5998;
+}
+
+.social-media--twitter {
+  background-color: #00aced;
+}
+
+.social-media--github {
+  background-color: #333;
+}
+
+.social-media--linkedin {
+  background-color: #007bb6;
+}
+
+.social-media--elmo {
+  background-color: #ff4500;
+}
+
+.social-media__span {
+  margin-left: 25px;
+  overflow: hidden;
+}
+
+.social-media__link {
+  color: white;
+}
+
+.social-media--width:hover {
+  width: 250px;
+}
+
+ /* font awesome class used for social-media icons */
+.fa {
+  margin-right: 15px;
+  padding-left: 25px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
